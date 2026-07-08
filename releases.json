@@ -1,0 +1,66 @@
+{
+  "releases": [
+    {
+      "title": "0ngForge",
+      "type": "project",
+      "status": "active",
+      "version": "v1.0.0",
+      "date": "2026-06-12",
+      "summary": "Packager and installer to deploy VS Code along with selected extensions on offline machines using a single file.",
+      "tags": ["forge", "package manager", "tools"],
+      "links": [
+        { "label": "View releases", "href": "/releases/0ngForge.html" }
+      ]
+    },
+    {
+      "title": "dev.mas0ng.com base",
+      "type": "note",
+      "status": "live",
+      "version": "v0.1.0",
+      "date": "2026-07-07",
+      "summary": "The first base for code releases, project notes, and experiments.",
+      "tags": ["dev site", "release", "no login"],
+      "links": [
+        { "label": "View page", "href": "/" },
+        { "label": "GitHub profile", "href": "https://github.com/mas0ng" }
+      ]
+    },
+    {
+      "title": "Browser tools",
+      "type": "app",
+      "status": "available",
+      "version": "collection",
+      "date": "2026-06-18",
+      "summary": "Small utilities from mas0ng.com, including QR, dice, mosaic blur, HTML viewer, and timer tools.",
+      "tags": ["tools", "frontend", "apps"],
+      "links": [
+        { "label": "QR Generator", "href": "https://mas0ng.com/public/apps/a/qr/" },
+        { "label": "Timer", "href": "https://mas0ng.com/public/apps/a/timer/" }
+      ]
+    },
+    {
+      "title": "Website release notes",
+      "type": "project",
+      "status": "planned",
+      "version": "next",
+      "date": "2026-07-07",
+      "summary": "A future place for publishing notable changes to the website and shared components.",
+      "tags": ["website", "changelog", "frontend"],
+      "links": [
+        { "label": "Main site", "href": "https://mas0ng.com/" }
+      ]
+    },
+    {
+      "title": "Experiment shelf",
+      "type": "experiment",
+      "status": "planned",
+      "version": "open",
+      "date": "2026-07-07",
+      "summary": "Prototype space for snippets, demos, and half-polished ideas that are still useful to share.",
+      "tags": ["experiments", "demos", "snippets"],
+      "links": [
+        { "label": "GitHub profile", "href": "https://github.com/mas0ng" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dev.mas0ng.com | 0ngForge Releases</title>
+  <meta name="description" content="Release history and version logs for 0ngForge." />
+  <link class="canonical" href="https://dev.mas0ng.com/releases/0ngForge.html" />
+  <meta name="theme-color" content="#07111f" />
+  <link rel="icon" type="image/svg+xml" href="https://mas0ng.com/public_assets/site_branding/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://mas0ng.com/public_assets/fonts/etna.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" />
+  <link rel="stylesheet" href="https://mas0ng.com/public_assets/site/css/site.css" />
+  <link rel="stylesheet" href="/assets/dev.css" />
+  <script src="/assets/navbar.js" defer></script>
+  <script src="/assets/footer.js" defer></script>
+  <script src="/assets/dev.js" defer></script>
+  <style>
+    .back-button-container {
+      width: min(100% - 48px, 1180px);
+      margin: 40px auto 0 auto;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .back-button {
+      background: #ffffff !important;
+      color: #000000 !important;
+      border: 1px solid #ffffff !important;
+      font-weight: 700;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .back-button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin: 40px auto;
+      max-width: 100%;
+      width: min(100% - 48px, 1180px);
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 32px;
+      border-left: 2px solid rgba(56, 189, 248, 0.25);
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+    }
+    .timeline-version-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      margin-bottom: 12px;
+    }
+    .timeline-version-badge.latest {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+    }
+    .timeline-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 32px;
+      text-align: left;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .timeline-card h2 {
+      font-size: 1.4rem;
+      margin: 0 0 6px 0;
+      color: #fff;
+      font-family: var(--font-display);
+    }
+    .timeline-date {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.4);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .timeline-card ul {
+      margin: 16px 0 0 0;
+      padding-left: 20px;
+      color: #cbd5e1;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+    .timeline-card li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body data-page="dev">
+  <div id="site-main" class="dev-site">
+    <div class="dev-backdrop" aria-hidden="true"></div>
+
+    <main>
+      <!-- Back button above header -->
+      <div class="back-button-container">
+        <a href="/releases/" class="back-button">&larr; Back to Releases</a>
+      </div>
+
+      <!-- Cool blue gradient header -->
+      <section class="dev-hero" aria-labelledby="dev-title" style="margin-top: 16px; margin-bottom: 40px; text-align: center;">
+        <div class="dev-hero__copy" style="max-width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <h1 id="dev-title" style="font-size: clamp(2.2rem, 5vw, 3.5rem); margin: 0 auto; color: #fff;">0ngForge Releases</h1>
+          <p class="dev-hero__lead" style="margin: 16px auto 0 auto; font-size: 1rem; color: rgba(255, 255, 255, 0.85); line-height: 1.5; max-width: 70ch; text-align: center;">
+            A simple tool to package and install VS Code along with all your extensions on offline machines using just a single archive file.
+          </p>
+        </div>
+      </section>
+
+      <section class="timeline" style="padding-bottom: 64px;">
+        <!-- Version 1.0.0 (Latest & Only Release) -->
+        <div class="timeline-item latest">
+          <span class="timeline-version-badge latest">v1.0.0 - Stable</span>
+          <div class="timeline-card">
+            <h2>0ngForge v1.0.0</h2>
+            <div class="timeline-date">Released on 12 June 2026</div>
+            <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; margin: 0;">Initial release of the 0ngForge offline VS Code installer packager.</p>
+            <ul>
+              <li>Bundles VS Code binaries and selected extensions into a single self-contained archive for offline deployments.</li>
+              <li>Automates software setup and provisions VS Code extensions with a single execution.</li>
+              <li>Ensures extension dependency resolution and manifest validation.</li>
+            </ul>
+
+            <!-- Download Button -->
+            <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="/downloads/0ngforge/build.zip" id="download-btn" class="nav-pill nav-pill--solid" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 700;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download Build (.zip)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Download Terms Modal -->
+    <div id="terms-modal" style="position: fixed; inset: 0; z-index: 9999; display: none; align-items: center; justify-content: center; padding: 20px;">
+      <!-- Overlay -->
+      <div id="terms-overlay" style="position: absolute; inset: 0; background: rgba(5, 10, 20, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);"></div>
+      
+      <!-- Modal Container -->
+      <div class="timeline-card" style="position: relative; z-index: 10000; width: 100%; max-width: 1000px; height: 820px; padding: 32px; display: flex; flex-direction: column; gap: 20px; box-shadow: 0 25px 70px rgba(0,0,0,0.6); max-height: calc(100vh - 60px); overflow: hidden;">
+        
+        <!-- Modal Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 16px;">
+          <div>
+            <h3 style="margin: 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #38bdf8; font-weight: 800;" id="terms-step-label">Step 1 of 6</h3>
+            <h2 style="margin: 4px 0 0 0; font-size: 1.4rem; color: #fff; font-family: var(--font-display);" id="terms-title-label">Privacy Policy</h2>
+          </div>
+          <button id="terms-close-btn" style="background: none; border: none; color: rgba(255,255,255,0.4); font-size: 1.8rem; cursor: pointer; line-height: 1; transition: color 0.15s ease;">&times;</button>
+        </div>
+        
+        <!-- Modal Content (Iframe Area) -->
+        <div id="iframe-wrapper" style="flex: 1; overflow: hidden; display: flex;">
+          <iframe id="terms-iframe" style="width: 100%; height: 100%; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; background: rgba(0,0,0,0.2);" src=""></iframe>
+        </div>
+
+        <!-- Specific Terms Content Area -->
+        <div id="specific-terms-content" style="display: none; flex: 1; flex-direction: column; gap: 16px; color: #cbd5e1; overflow-y: auto; padding-right: 8px; line-height: 1.6;">
+          <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 12px; padding: 18px; display: flex; gap: 12px; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <div>
+              <strong style="color: #f87171; display: block; margin-bottom: 4px;">Microsoft VS Code Rights</strong>
+              Visual Studio Code, VS Code, and all associated branding, copyright, and trademarks are owned by Microsoft Corporation. 0ngForge is an independent third-party packaging tool and is not associated with, authorized, or endorsed by Microsoft.
+            </div>
+          </div>
+
+          <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 12px; padding: 18px; display: flex; gap: 12px; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            <div>
+              <strong style="color: #34d399; display: block; margin-bottom: 4px;">Open-Source & Remixing</strong>
+              0ngForge is fully open-source and released under the MIT License. You are permitted and encouraged to remake, modify, fork, or redistribute this software to fit your own custom systems or packaging layouts.
+            </div>
+          </div>
+          
+          <div style="padding: 4px;">
+            <h4 style="color: #fff; margin: 0 0 8px 0; font-size: 0.95rem;">Disclaimer</h4>
+            <p style="margin: 0; font-size: 0.88rem; color: #94a3b8;">By downloading this build, you agree that you are solely responsible for ensuring compliance with any licensing agreements, copyright limits, or usage terms corresponding to the Visual Studio Code extensions you package and provision.</p>
+          </div>
+        </div>
+        
+        <!-- Modal Footer -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px; margin-top: 8px;">
+          <button id="terms-cancel-btn" class="nav-pill" style="border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.6); font-weight: 700;">Cancel</button>
+          <button id="terms-next-btn" class="nav-pill nav-pill--solid" style="font-weight: 700; margin: 0;">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const downloadBtn = document.getElementById('download-btn');
+      const modal = document.getElementById('terms-modal');
+      const overlay = document.getElementById('terms-overlay');
+      const closeBtn = document.getElementById('terms-close-btn');
+      const cancelBtn = document.getElementById('terms-cancel-btn');
+      const nextBtn = document.getElementById('terms-next-btn');
+      const iframe = document.getElementById('terms-iframe');
+      const stepLabel = document.getElementById('terms-step-label');
+      const titleLabel = document.getElementById('terms-title-label');
+      
+      const iframeWrapper = document.getElementById('iframe-wrapper');
+      const specificContent = document.getElementById('specific-terms-content');
+
+      const steps = [
+        { type: "general", title: "Privacy Policy", url: "https://mas0ng.com/legal/privacy/?hideNav=true" },
+        { type: "general", title: "Terms of Service", url: "https://mas0ng.com/legal/terms.html?hideNav=true" },
+        { type: "general", title: "Software Licenses", url: "https://mas0ng.com/legal/licences.html?hideNav=true" },
+        { type: "general", title: "Cookie Policy", url: "https://mas0ng.com/legal/cookies.html?hideNav=true" },
+        { type: "general", title: "Downloads Policy", url: "https://mas0ng.com/legal/downloads/?hideNav=true" },
+        { type: "specific", title: "Program Terms & Licenses" }
+      ];
+      let currentStep = 0;
+
+      const openModal = (e) => {
+        e.preventDefault();
+        currentStep = 0;
+        updateStep();
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeModal = () => {
+        modal.style.display = 'none';
+        iframe.src = '';
+        document.body.style.overflow = '';
+      };
+
+      const updateStep = () => {
+        const step = steps[currentStep];
+        stepLabel.textContent = `Step ${currentStep + 1} of ${steps.length}`;
+        titleLabel.textContent = step.title;
+
+        if (step.type === 'general') {
+          iframeWrapper.style.display = 'flex';
+          specificContent.style.display = 'none';
+          iframe.src = step.url;
+          nextBtn.textContent = "Next";
+        } else if (step.type === 'specific') {
+          iframeWrapper.style.display = 'none';
+          specificContent.style.display = 'flex';
+          nextBtn.textContent = "Accept & Download";
+        }
+      };
+
+      const handleNext = () => {
+        if (currentStep < steps.length - 1) {
+          currentStep++;
+          updateStep();
+        } else {
+          // Trigger download
+          const link = document.createElement('a');
+          link.href = "/downloads/0ngforge/build.zip";
+          link.setAttribute('download', 'build.zip');
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          closeModal();
+        }
+      };
+
+      downloadBtn?.addEventListener('click', openModal);
+      closeBtn?.addEventListener('click', closeModal);
+      cancelBtn?.addEventListener('click', closeModal);
+      overlay?.addEventListener('click', closeModal);
+      nextBtn?.addEventListener('click', handleNext);
+
+      // Escape key to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'flex') {
+          closeModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
