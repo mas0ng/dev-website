@@ -195,18 +195,18 @@
       banner.innerHTML = `
         <div style="display: flex; align-items: center; gap: 8px;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          <h2 style="margin: 0; font-size: 1.1rem;">Privacy & Preferences</h2>
+          <h2 style="margin: 0; font-size: 1.1rem;">Browser storage notice</h2>
         </div>
         <p style="margin: 6px 0 12px; font-size: 0.88rem; line-height: 1.5; color: #cbd5e1;">
-          We do not use tracking or analytical cookies. We only save your site preferences locally on your browser storage.
+          This site does not use analytics, advertising, or cross-site tracking. Dismissing this notice saves one preference locally on this device.
         </p>
         <div class="cookie-banner__options">
-          <div style="font-size: 0.85rem; color: #cbd5e1; font-weight: 700;">Essential Preferences (LocalStorage)</div>
-          <div style="font-size: 0.85rem; color: #64748b; font-weight: 700;">Third-Party Cookies (None Used)</div>
+          <div style="font-size: 0.85rem; color: #cbd5e1; font-weight: 700;">Notice preference (local storage)</div>
+          <div style="font-size: 0.85rem; color: #64748b; font-weight: 700;">Analytics and advertising storage: none</div>
         </div>
         <div class="cookie-banner__actions" style="margin-top: 8px;">
           <a href="https://mas0ng.com/legal/privacy/" style="font-size: 0.8rem; color: #cbd5e1; align-self: center; margin-right: auto; text-decoration: underline; font-weight: 500;">Privacy Policy</a>
-          <button data-cookie-ok class="dev-button" style="padding: 6px 16px; min-height: auto; font-size: 0.82rem; border-radius: 6px; cursor: pointer;">Got it</button>
+          <button data-cookie-ok class="dev-button" style="padding: 6px 16px; min-height: auto; font-size: 0.82rem; border-radius: 6px; cursor: pointer;">Dismiss notice</button>
         </div>
       `;
       siteMain.appendChild(banner);
