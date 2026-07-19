@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <div class="dev-footer__col">
         <div class="dev-footer__section-title">Legal</div>
-        <a href="https://mas0ng.com/legal/privacy/">Privacy Policy</a>
-        <a href="https://mas0ng.com/legal/licences/">Licence Info</a>
+        <a href="https://mas0ng.com/legal/privacy">Privacy Policy</a>
+        <a href="https://mas0ng.com/legal/licences">Licence Info</a>
       </div>
       <div class="dev-footer__col">
         <div class="dev-footer__section-title">Security</div>

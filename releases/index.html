@@ -21,82 +21,53 @@
   <meta name="twitter:description" content="Software releases, changelogs, experiments, and code projects from Mason." />
   <meta name="twitter:image" content="https://mas0ng.com/public_assets/site_branding/meta/dev-social-1200x630.png" />
   <meta name="twitter:image:alt" content="Software releases on dev.mas0ng.com" />
-  <meta name="theme-color" content="#07111f" />
+  <meta name="theme-color" content="#000000" />
   <link rel="icon" type="image/svg+xml" href="https://mas0ng.com/public_assets/site_branding/favicon.svg" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" href="https://mas0ng.com/public_assets/fonts/etna.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Manrope:wght@500;600;700;800&display=swap" />
   <link rel="stylesheet" href="https://mas0ng.com/public_assets/site/css/site.css" />
-  <link rel="stylesheet" href="/assets/dev.css" />
-  <script src="/assets/navbar.js" defer></script>
-  <script src="/assets/footer.js" defer></script>
-  <script src="/assets/dev.js" defer></script>
-  <style>
-    .dev-banner-card {
-      display: block;
-      text-decoration: none;
-      transition: transform 0.2s ease;
-      width: min(100% - 48px, 1180px);
-      margin: 0 auto;
-    }
-    .dev-banner-card:hover {
-      transform: translateY(-3px);
-    }
-    .dev-outlined-card {
-      width: 100%;
-      padding: 40px;
-      border: 1px solid rgba(255, 255, 255, 0.12); /* Clean white outline */
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.02); /* Subtle glass background */
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
-      text-align: left;
-    }
-    .dev-banner-card:hover .dev-outlined-card {
-      border-color: rgba(255, 255, 255, 0.35); /* Brighter outline on hover */
-      background: rgba(255, 255, 255, 0.04);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-    }
-    .dev-banner-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      flex-wrap: wrap;
-      gap: 24px;
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/dev.css?v=20260719-dev4" />
+  <script src="/assets/navbar.js?v=20260719-dev4" defer></script>
+  <script src="/assets/footer.js?v=20260719-dev4" defer></script>
+  <script src="/assets/dev.js?v=20260719-dev4" defer></script>
 </head>
 <body data-page="dev">
   <div id="site-main" class="dev-site">
-    <div class="dev-backdrop" aria-hidden="true"></div>
-
     <main>
-      <!-- Cool blue gradient header -->
-      <section class="dev-hero" aria-labelledby="dev-title" style="margin-top: 40px; margin-bottom: 40px;">
-        <div class="dev-hero__copy" style="max-width: 100%;">
-          <h1 id="dev-title" style="font-size: clamp(2.2rem, 5vw, 3.5rem); margin: 0 auto; text-align: center;">Software Releases</h1>
+      <section class="release-overview" aria-labelledby="dev-title">
+        <div class="release-overview__copy">
+          <h1 id="dev-title">Software releases.</h1>
+          <p>Published builds, version notes and download information in one place.</p>
         </div>
+        <dl class="release-overview__summary" aria-label="Release archive summary">
+          <div><dt>Projects</dt><dd>1</dd></div>
+          <div><dt>Latest release</dt><dd>12 June 2026</dd></div>
+        </dl>
       </section>
 
-      <div style="padding-bottom: 64px; display: flex; flex-direction: column; gap: 24px; align-items: center; width: 100%;">
-        <!-- 0ngForge Outlined Banner -->
-        <a href="/releases/0ngForge.html" class="dev-banner-card" aria-label="View 0ngForge Releases">
-          <div class="dev-outlined-card">
-            <div class="dev-banner-content">
-              <div style="max-width: calc(100% - 180px); min-width: 280px;">
-                <h2 style="font-size: 1.8rem; margin: 0 0 8px 0; color: #fff; font-family: var(--font-display);">0ngForge</h2>
-                <p style="margin: 0; font-size: 0.95rem; color: rgba(255, 255, 255, 0.65); line-height: 1.5; font-weight: 500;">A simple tool to package and install VS Code along with all your extensions on offline machines using just a single archive file.</p>
-              </div>
-              <div class="nav-pill nav-pill--solid" style="display: inline-flex; align-items: center; gap: 8px; margin: 0; font-weight: 700; border-color: rgba(255, 255, 255, 0.25);">
-                <span>View Releases</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </div>
+      <section class="release-catalog" aria-labelledby="projects-title">
+        <header class="release-catalog__header">
+          <h2 id="projects-title">Available projects</h2>
+          <p>Open a project for its release history and download terms.</p>
+        </header>
+
+        <a href="/releases/0ngForge.html" class="release-entry" aria-label="Open 0ngForge releases">
+          <span class="release-entry__index">01</span>
+          <div class="release-entry__copy">
+            <div class="release-entry__title-row">
+              <h3>0ngForge</h3>
+              <span class="release-entry__status">Stable</span>
             </div>
+            <p>A tool for packaging VS Code and selected extensions into one archive for use on offline machines.</p>
           </div>
+          <dl class="release-entry__facts">
+            <div><dt>Version</dt><dd>1.0.0</dd></div>
+            <div><dt>Released</dt><dd>12 Jun 2026</dd></div>
+          </dl>
+          <span class="release-entry__action">Open releases <span aria-hidden="true">&rarr;</span></span>
         </a>
-      </div>
+      </section>
     </main>
   </div>
 </body>

@@ -20,22 +20,21 @@
   <meta name="twitter:description" content="The page you requested could not be found on dev.mas0ng.com." />
   <meta name="twitter:image" content="https://mas0ng.com/public_assets/site_branding/meta/404-social-1200x630.png" />
   <meta name="twitter:image:alt" content="404 — page not found" />
-  <meta name="theme-color" content="#07111f" />
+  <meta name="theme-color" content="#000000" />
   <link rel="icon" type="image/svg+xml" href="https://mas0ng.com/public_assets/site_branding/favicon.svg" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" href="https://mas0ng.com/public_assets/fonts/etna.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Manrope:wght@500;600;700;800&display=swap" />
   <link rel="stylesheet" href="https://mas0ng.com/public_assets/site/css/site.css" />
-  <link rel="stylesheet" href="/assets/dev.css?v=20260714-4041" />
-  <script src="/assets/navbar.js" defer></script>
-  <script src="/assets/footer.js" defer></script>
-  <script src="/assets/dev.js" defer></script>
+  <link rel="stylesheet" href="/assets/dev.css?v=20260719-dev4" />
+  <link rel="stylesheet" href="/assets/dev-404.css?v=20260719-dev404-1" />
+  <script src="/assets/navbar.js?v=20260719-dev4" defer></script>
+  <script src="/assets/footer.js?v=20260719-dev4" defer></script>
+  <script src="/assets/dev.js?v=20260719-dev4" defer></script>
   <script src="/assets/404.js?v=20260714-1" defer></script>
 </head>
 <body data-page="dev">
   <div id="site-main" class="dev-site">
-    <div class="dev-backdrop" aria-hidden="true"></div>
-
     <aside class="main-page-suggestion" id="main-page-suggestion" aria-live="polite" hidden>
       <span class="main-page-suggestion__icon" aria-hidden="true">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/><path d="M8.5 11h5M11 8.5v5"/></svg>
@@ -52,14 +51,15 @@
       </div>
     </aside>
 
-
-    <main style="display: grid; place-items: center; padding: 24px;">
-      <section class="dev-hero" style="max-width: 640px; width: 100%; min-height: auto; padding: 64px 32px; margin: 0 auto; text-align: center;">
-        <div class="dev-hero__copy">
-          <span style="font-family: var(--font-code); font-size: 5.5rem; font-weight: 900; color: #fff; display: block; line-height: 1; margin-bottom: 12px; text-shadow: 0 4px 12px rgba(0,0,0,0.35);">404</span>
-          <h1 style="font-family: var(--font-display); font-size: 2.2rem; margin: 0 0 16px; color: #fff; line-height: 1.2;">Page Not Found</h1>
-          <p style="color: rgba(255, 255, 255, 0.85); margin: 0 0 32px; font-size: 1.05rem; line-height: 1.6; max-width: 42ch;">The page you are looking for doesn't exist, has been moved, or is temporarily unavailable.</p>
-          <a href="/" class="nav-pill nav-pill--solid" style="display: inline-flex; min-height: 42px; padding: 8px 24px; font-weight: 700;">Return Home</a>
+    <main class="dev-error">
+      <section class="dev-error__panel" aria-labelledby="dev-error-title">
+        <h1 id="dev-error-title">That page isn&rsquo;t here.</h1>
+        <div class="dev-error__details">
+          <p>The address may be out of date, or the release you were looking for may have moved.</p>
+          <div class="dev-error__actions">
+            <a class="dev-error__button dev-error__button--primary" href="/">Developer home <span aria-hidden="true">&rarr;</span></a>
+            <a class="dev-error__button" href="https://mas0ng.com/">mas0ng.com <span aria-hidden="true">&nearr;</span></a>
+          </div>
         </div>
       </section>
     </main>

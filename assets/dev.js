@@ -14,38 +14,12 @@
   boot();
 
   async function boot() {
-    initMobileBlock();
     if (grid || latest) {
       await loadReleases();
       bindControls();
       render();
     }
     initCookieBanner();
-  }
-
-  function initMobileBlock() {
-    const siteMain = document.getElementById('site-main');
-    if (!siteMain) return;
-
-    if (document.querySelector('.mobile-block-screen')) return;
-
-    const block = document.createElement('div');
-    block.className = 'mobile-block-screen';
-    block.style.display = 'none';
-    block.innerHTML = `
-      <div class="dev-hero" style="max-width: 440px; padding: 48px 24px; text-align: center; min-height: auto; margin: 0 auto;">
-        <div class="dev-hero__copy">
-          <h1 style="font-size: 1.8rem; margin: 0 0 16px; line-height: 1.3;">Mobile Access Unavailable</h1>
-          <p style="color: rgba(255, 255, 255, 0.85); margin: 0; font-size: 0.95rem; line-height: 1.6;">
-            dev.mas0ng.com is currently not optimized for mobile browsers. Please access this site from a desktop device.
-          </p>
-        </div>
-      </div>
-      <a href="https://mas0ng.com/legal/security?reportModalPopup=true" class="nav-pill nav-pill--red" style="margin-top: 24px; display: inline-flex;">
-        Report Security Issue
-      </a>
-    `;
-    siteMain.appendChild(block);
   }
 
   async function loadReleases() {
@@ -205,7 +179,7 @@
           <div style="font-size: 0.85rem; color: #64748b; font-weight: 700;">Analytics and advertising storage: none</div>
         </div>
         <div class="cookie-banner__actions" style="margin-top: 8px;">
-          <a href="https://mas0ng.com/legal/privacy/" style="font-size: 0.8rem; color: #cbd5e1; align-self: center; margin-right: auto; text-decoration: underline; font-weight: 500;">Privacy Policy</a>
+          <a href="https://mas0ng.com/legal/privacy" style="font-size: 0.8rem; color: #cbd5e1; align-self: center; margin-right: auto; text-decoration: underline; font-weight: 500;">Privacy Policy</a>
           <button data-cookie-ok class="dev-button" style="padding: 6px 16px; min-height: auto; font-size: 0.82rem; border-radius: 6px; cursor: pointer;">Dismiss notice</button>
         </div>
       `;
